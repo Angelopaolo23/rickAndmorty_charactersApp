@@ -22,20 +22,9 @@ const MiApi = () => {
             alert(e.message)
         }
     }
-    const sortInfo = () => {
-        charactersInfo.sort((a,b) => {
-            const nameA = a.name.toLowerCase();
-            const nameB = b.name.toLowerCase();
-            if (nameA < nameB) {
-                return -1;
-            } else if (nameA > nameB) {
-                return 1;
-            }else {
-                return 0;
-            }});
-        setCharactersInfo(charactersInfo);
-        console.log(charactersInfo);
-    };
+    charactersInfo.sort((a,b) => b.name.localeCompare(a.name)
+    );
+    
 
     return (
         <div>
@@ -43,7 +32,7 @@ const MiApi = () => {
                 <input name="character filter" className="w-50 p-3 text-center rounded mb-4 mt-3" placeholder="Search by name or status" type="text" onChange={(e) => setFilterInfo(e.target.value)} value={filterInfo}/>
             </div>
             
-            <section className="">
+            <section>
                 {charactersInfo.map(character => {
                         if (filterInfo === "" || character.name.toLowerCase().includes(filterInfo.toLowerCase()) || character.status.toLowerCase().includes(filterInfo.toLowerCase())) {
                             return (

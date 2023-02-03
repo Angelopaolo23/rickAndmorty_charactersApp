@@ -7,7 +7,7 @@ function App() {
   
   return (
     <div className="App min-vh-100" style={{backgroundImage: `url(${mr_meeseks})` }}>
-      <Header></Header>
+      <Header />
       <MiApi />
     </div>
   );
