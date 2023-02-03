@@ -1,19 +1,17 @@
 import Header from "./components/Header";
-import { apiData } from "./Data";
+import MiApi from "./components/MiApi";
+import mr_meeseks from "./img/mr_meeseks.jpeg";
+
 
 function App() {
   
-  const prueba = () => {
-    console.log(apiData)
-  };
-  
   return (
-    <div className="App">
+    <div className="App min-vh-100" style={{backgroundImage: `url(${mr_meeseks})` }}>
       <Header></Header>
-
-      <button onClick={prueba}>Imprimir info</button>
+      <MiApi />
     </div>
   );
 }
+
 
 export default App;
