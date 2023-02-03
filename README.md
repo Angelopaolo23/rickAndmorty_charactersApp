@@ -7,4 +7,4 @@ Este desafio consiste en la creacion de una aplicacion que consuma datos desde u
 Los puntos principales del desafio son la utilizacion de estados con useState, el consumo de una API a traves de un fetch utilizando useEffect, renderizar dinamicamente la informacion recibida desde la API y ordenarla de una forma a eleccion, y que el usuario pueda filtrar la informacion desplegada.
 
 
-LINK A VIDEO EXPLICATORIO DEL CODIGO: https://youtu.be/QXC0CS-QJN0
+LINK A VIDEO EXPLICATORIO DEL CODIGO: https://www.youtube.com/watch?v=GjK_XUY5NBg
